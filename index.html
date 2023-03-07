@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
+  integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="row">
+    <div id="success">
+      <div class="successcontent">
+        <svg width="80" height="80" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="url(#a)"/><path d="M28 39.92 36.08 48l16-16" stroke="#fff" stroke-width="3"/><defs><linearGradient id="a" x1="-23.014" y1="11.507" x2="0" y2="91.507" gradientUnits="userSpaceOnUse"><stop stop-color="#6348FE"/><stop offset="1" stop-color="#610595"/></linearGradient></defs></svg>
+        <h2>Thank you!</h2>
+        <p>We've added your card details</p>
+        <button type="submit" class="btn btn-primary" id="successsubmit" style="width: 125%;">Continue</button>
+      </div>
+      
+    </div>
+    
+        <div class="cardresp">
+          <div class="bground">
+          
+           
+       
+          </div>
+          <div class="cardpos">
+            <div class="frontcard">
+              <img src="../images/bg-card-front.png" alt="" >
+              <img src="../images/card-logo.svg" alt="" class="logo1" >
+              <div class="cardnum">
+                <span id="cardnumber" style="font-size: 18px;">0000 0000 0000 0000</span></div>
+              <div class="cardtitle">
+                <div class="cardname" id="cardname">Jane Appleseed</div>
+                <div class="cardexpire"><span id="cardexpireMonth">00</span>/<span id="cardexpireYear">00</span></div>
+              </div>
+            </div>
+            <div class="backcard">
+              <img src="../images/bg-card-back.png" alt="" >
+              <div class="cvcnum">
+                <span class="cardcvc" style="font-size: 18px;">000</span>
+              </div>
+            </div>
+        </div>
+        
+        <div class="formresp">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1"><b>Cardholder Name</b> </label>
+              <input type="text" class="form-control" id="inputName" aria-describedby="emailHelp" placeholder="e.g. Jane Appleseed">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1" style="padding-top: 20px;"><b>Card Number</b></label>
+              <input type="text" class="form-control" id="inputCardNumber" placeholder=" e.g. 1234 5678 9123 0000">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1" style="margin-right: 1.5rem; padding-top: 20px;"><b>Exp. Date (MM/YY)</b></label>
+              <label for=""><b>CVC</b></label>
+              <div class="inputSection">
+                <input type="number" class="form-control" id="ExpireMonth" placeholder="MM" style="margin-right: 10px; width: 25%;">
+                <input type="number" class="form-control" id="ExpireYear" placeholder="YY" style="margin-right: 10px; width: 25%;">
+                <input type="number" class="form-control" id="cvc" placeholder="e.g. 123">
+              </div>
+              
+            </div>
+            
+            <button type="submit" class="btn btn-primary" id="submit">Confirm</button>
+          </form>
+        </div>
+        
+      
+    </div>
+     
+      
+       
+          
+          
+      
+    </div>
+       
+      
+    
+   
+   
+     
+  </div>
+  
+  
+  <script src="js/script.js"></script>
+
+  
+  
+
+  
+</body>
+</html>
